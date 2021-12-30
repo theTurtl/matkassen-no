@@ -182,6 +182,13 @@ header {
   font-weight: 100;
 }
 
+.profileContainer:hover {
+  cursor: pointer;
+  animation-name: boxFader;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
 .profileContainer p {
   color: #fbf7ef;
   line-height: 1.75;
@@ -226,6 +233,13 @@ header {
   margin-top: 28px;
 }
 
+.bannerContainer button:hover {
+  cursor: pointer;
+  animation-name: boxFader;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+}
+
 .bannerIllustration {
   position: absolute;
   background-image: url("../images/shopping-illustration.svg");
@@ -248,13 +262,13 @@ header {
 
 .filter h3 {
   color: #0e1a11;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 600;
 }
 
 .filter h4 {
   font-size: 24px;
-  margin: 24px 0px 16px 0px;
+  margin: 24px 0px 8px 0px;
   font-weight: 100;
 }
 
@@ -263,15 +277,23 @@ header {
   display: flex;
   background-color: #0e1a11;
   color: #fbf7ef;
-  padding: 12px 16px;
+  padding: 15px 18px;
   font-weight: 100;
-  width: 160px;
+  width: 144px;
   border-radius: 32px;
   margin-top: 28px;
 }
 
+.sortOption:hover {
+  cursor: pointer;
+  animation-name: boxFader;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
 .sortOption p {
   float: left;
+  font-size: 14px;
 }
 
 .dropDownIcon {
@@ -293,7 +315,7 @@ header {
 
 .option {
   position: relative;
-  width: 100%;
+  width: 80%;
   height: 48px;
   border: solid 1px #0e1a11;
   border-radius: 8px;
@@ -396,15 +418,303 @@ header {
   height: 100px;
   margin: auto;
   flex: 50%;
-  background-color: #a7c957;
+}
+
+/*--------------- Searchbar -------------- */
+
+.searchBar {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  background-color: #0e1a1125;
+  border-radius: 20px;
+  margin-bottom: 24px;
+}
+
+.searchIcon {
+  float: left;
+  height: 100%;
+  width: 20px;
+  margin-left: 16px;
+  background-image: url("../images/searchIcon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.searchBar input {
+  font-family: "Vollkorn", serif;
+  font-size: 14px;
+  width: 100%;
+  border: 0;
+  background-color: #0e1a1100;
+  padding-left: 10px;
+  border-radius: 20px;
+  height: 100%;
+}
+
+/*--------------- Meal Card ---------------*/
+
+@keyframes boxFader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 0px 0px 24px 0px #0e1a1175;
+  }
+}
+
+.mealsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  grid-gap: 8px;
+}
+
+.mealCard {
+  display: block;
+  position: relative;
+  width: 144px;
+  height: 192px;
+  border-radius: 8px;
+  border: solid 3px #0e1a11;
+}
+
+.addMealCard {
+  display: block;
+  position: relative;
+  width: 144px;
+  height: 196px;
+  border-radius: 8px;
+  border: solid 1px #0e1a11;
+}
+
+.addMealDescription {
+  width: 100%;
+  height: 136px;
+  border-radius: 8px;
+  margin: auto;
+  text-align: center;
+  font-size: 42px;
+  font-weight: 100;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.addMealDescription:hover {
+  cursor: pointer;
+  animation-name: boxFader;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+.addMealDescription p {
+  font-size: 20px;
+}
+
+.addMealImg {
+  width: 20px;
+  height: 42px;
+  margin: auto;
+  background-image: url("../images/pluss.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.mealCard:hover {
+  cursor: pointer;
+  animation-name: boxFader;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+.mealCard h5 {
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.mealElements {
+  position: absolute;
+  width: 100%;
+  background-color: #0e1a11;
+  border-radius: 6px 6px 0px 0px;
+  color: #fbf7ef;
+  box-shadow: 0px 0px 16px 1px #0e1a11;
+  clip-path: inset(-24px -1px 0px 0px);
+  bottom: 0;
+}
+
+.mealDescription {
+  padding: 16px;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.mealPrice {
+  width: 50px;
+  text-align: center;
+  margin-top: 22px;
+  font-weight: 700;
+}
+
+.priceDecoration {
+  width: 100%;
+  border: dashed 0.2px #fbf7ef;
+}
+
+.addButton {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 25px;
+  background-color: #fbf7ef;
+  bottom: 0;
+  right: 0;
+  margin: 8px;
+  text-align: center;
+  font-size: 42px;
+  font-weight: 100;
+}
+
+.plussImg {
+  width: 20px;
+  height: 42px;
+  margin: auto;
+  background-image: url("../images/pluss.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+@keyframes fader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 0px 0px 12px 0px #fbf7ef;
+  }
+}
+
+.addButton:hover {
+  cursor: pointer;
+  animation-name: fader;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
 }
 
 b {
   font-weight: 700;
 }
 
+footer {
+  position: relative;
+  background-color: #0e1a11;
+  height: 200px;
+  padding: 32px;
+  width: 100%;
+  margin-bottom: -24px;
+}
+
+.footerNav {
+  padding: 32px;
+  width: 200px;
+  border: solid 1px #fbf7ef;
+  border-radius: 4px;
+  height: 100px;
+}
+
+.footerNav h7 {
+  font-size: 24px;
+  color: #fbf7ef;
+}
+
+.footerNav p {
+  color: #fbf7ef;
+  width: 100%;
+  height: 200px;
+}
+
+.footerSignature {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: #fbf7ef;
+  text-decoration: none;
+  bottom: 0;
+  padding: 32px 0px;
+}
+
+/*------------- Din Side ------------- */
+
+.profileBannerContainer {
+  display: grid;
+}
+
+.profileBanner {
+  float: left;
+  position: relative;
+  width: 100%;
+  background-color: #0e1a11;
+  height: 180px;
+  border-radius: 32px;
+}
+
+.profileBanner h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fbf7ef;
+  padding: 32px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.profilePicture {
+  float: right;
+  width: 200px;
+  background-color: #a7c957;
+  height: 180px;
+  width: 30%;
+}
+
+.profileStat {
+  padding: 64px;
+}
+
+.profileStat h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
 @media (max-width: 800px) {
   .browserContainer {
     flex-direction: column;
+  }
+
+  .option {
+    width: 100%;
+  }
+
+  .mealView {
+    width: 100%;
+  }
+
+  .mealsContainer {
+    grid-gap: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+
+  .profileContainer {
+    display: none;
+  }
+
+  .navContainer {
+    margin-top: 56px;
   }
 }

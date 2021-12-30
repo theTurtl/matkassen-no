@@ -8,6 +8,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
@@ -41,9 +42,21 @@ const Layout = ({ children }) => {
             marginTop: `2rem`,
           }}
         >
-          © {new Date().getFullYear()}
-          {` `}
-          <a href="https://www.aspevik.com">aspevikdesign</a>
+          <div className="footerNav">
+            <h7>Sidekart.</h7>
+            <br/>
+            <p>
+              <Link to="/page-2/">Utforsk Meny</Link> <br />
+              <Link to="/Profil/">Din Profil</Link> <br />
+              <Link to="/using-ssr">Dine Retter</Link> <br />
+              <Link to="/using-dsg">Logg Ut</Link>
+            </p>
+          </div>
+          <div className="footerSignature">
+            © {new Date().getFullYear()}
+            {` `}
+            <a href="https://www.aspevik.com">aspevikdesign</a>
+          </div>
         </footer>
       </div>
     </>
