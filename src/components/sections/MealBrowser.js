@@ -2,7 +2,7 @@ import React from "react";
 
 function MealBrowser() {
     return (
-        <section>
+        <section className="browserSection">
             <div class="browserContainer">
                 <div class="filter">
                     <h3>Dine måltid.</h3>
@@ -23,9 +23,10 @@ function MealBrowser() {
                         </div>
                     </div>
                 </div>
-                <div class="mealView"></div>
+                <div class="mealView">
+
+                </div>
             </div>
-            <h3>test</h3>
         </section>
     )
 }

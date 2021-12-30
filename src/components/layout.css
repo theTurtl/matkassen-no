@@ -240,18 +240,10 @@ header {
 }
 
 /*---- Filter ----*/
-.browserContainer {
-  position: relative;
-  display: flex;
-  margin: 64px 0px;
-  grid-gap: 32px;
-  width: 100%;
-}
 
 .filter {
-  position: absolute;
   height: 100px;
-  width: 256px;
+  flex: 15%;
 }
 
 .filter h3 {
@@ -386,13 +378,33 @@ header {
   margin: 3px 45px;
 }
 
+.browserSection {
+  width: 100%;
+  height: 400px;
+}
+
+.browserContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 64px 0px;
+  grid-gap: 32px;
+  width: 100%;
+}
+
 .mealView {
   height: 100px;
   margin: auto;
-  width: 400px;
+  flex: 50%;
   background-color: #a7c957;
 }
 
 b {
   font-weight: 700;
+}
+
+@media (max-width: 800px) {
+  .browserContainer {
+    flex-direction: column;
+  }
 }
