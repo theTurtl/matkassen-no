@@ -7,7 +7,7 @@ function ProfileBanner() {
                 <h2>Nicole M. Aspevik</h2>
             </div>
             <div className="profilePicture">
-                
+                <div className="profileImage"></div>
             </div>
         </section>
     )

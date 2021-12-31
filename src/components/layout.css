@@ -652,6 +652,8 @@ footer {
 
 .profileBannerContainer {
   display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 8px;
 }
 
 .profileBanner {
@@ -659,8 +661,10 @@ footer {
   position: relative;
   width: 100%;
   background-color: #0e1a11;
-  height: 180px;
+  height: 200px;
   border-radius: 32px;
+  grid-column: 1 / 4;
+  grid-row: 1;
 }
 
 .profileBanner h2 {
@@ -676,9 +680,20 @@ footer {
 .profilePicture {
   float: right;
   width: 200px;
-  background-color: #a7c957;
-  height: 180px;
-  width: 30%;
+  border: solid 1px #0e1a11;
+  height: 200px;
+  width: 100%;
+  border-radius: 32px;
+}
+
+.profileImage {
+  margin: auto;
+  height: 100%;
+  width: 50%;
+  background-image: url("../images/defaultProfilePicture.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .profileStat {
@@ -688,6 +703,33 @@ footer {
 .profileStat h1 {
   font-size: 32px;
   font-weight: 600;
+}
+
+.statContainer {
+  display: flex;
+  margin-top: 32px;
+  grid-gap: 16px;
+}
+
+.statCard {
+  position: relative;
+  padding: 16px;
+  background-color: #0e1a11;
+  color: #fbf7ef;
+  width: 128px;
+  height: 128px;
+}
+
+.statCard h7 {
+  font-size: 20px;
+}
+
+.statCard p {
+  width: 100%;
+  height: 100%;
+  font-size: 64px;
+  text-align: center;
+  line-height: 1.7;
 }
 
 @media (max-width: 800px) {
