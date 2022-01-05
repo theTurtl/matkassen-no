@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -18,8 +17,8 @@ const Profil = () => (
             <p>1</p>
           </div>
           <div className="statCard">
-            <h7>Dine retter</h7>
-            <p>1</p>
+            <h7>Favoritter</h7>
+            <p>2</p>
           </div>
         </div>
         <div className="accountDeco"></div>
@@ -39,8 +38,6 @@ const Profil = () => (
         
       </div>
     </div>
-    
-    <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 

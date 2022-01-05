@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
             <h7>Sidekart.</h7>
             <br/>
             <p>
-              <Link to="/page-2/">Utforsk Meny</Link> <br />
+              <Link to="/FoodSuggestion/">Utforsk Meny</Link> <br />
               <Link to="/Profil/">Din Profil</Link> <br />
               <Link to="/using-ssr">Dine Retter</Link> <br />
               <Link to="/using-dsg">Logg Ut</Link>
