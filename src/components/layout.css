@@ -465,6 +465,18 @@ header {
   }
 }
 
+@keyframes boxFaderDelete {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    border: solid 1px #923730;
+    color: #923730;
+    box-shadow: 0px 0px 8px 0px #92373075;
+  }
+}
+
 .mealsContainer {
   display: flex;
   flex-wrap: wrap;
@@ -697,10 +709,79 @@ footer {
 }
 
 .profileStat {
+  display: flex;
+  flex-direction: row;
   padding: 64px;
 }
 
+.yourSide {
+  position: relative;
+  flex: 75%;
+}
+
+.account {
+  flex: 25%;
+}
+
+.logOut {
+  width: 100%;
+  height: 50px;
+  border: solid 1px #0e1a11;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 3.3;
+  font-weight: 100;
+  margin-bottom: 8px;
+}
+
+.deleteAccount {
+  width: 100%;
+  height: 50px;
+  border: solid 1px #0e1a11;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 3.3;
+  font-weight: 100;
+  opacity: 0.5;
+}
+
+.logOut:hover {
+  cursor: pointer;
+  animation-name: boxFader;
+  animation-fill-mode: forwards;
+  animation-duration: 0.3s;
+}
+
+.deleteAccount:hover {
+  cursor: pointer;
+  animation-name: boxFaderDelete;
+  animation-fill-mode: forwards;
+  animation-duration: 0.3s;
+}
+
+.accountBox {
+  position: relative;
+  margin-top: 32px;
+}
+
+.accountDeco {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 13px;
+  background-image: url(../images/wave.svg);
+  background-size: contain;
+  background-position: center;
+  margin-right: 64px;
+}
+
 .profileStat h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.profileStat h2 {
   font-size: 32px;
   font-weight: 600;
 }
@@ -716,18 +797,18 @@ footer {
   padding: 16px;
   background-color: #0e1a11;
   color: #fbf7ef;
-  width: 128px;
-  height: 128px;
+  width: 80px;
+  height: 80px;
 }
 
 .statCard h7 {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .statCard p {
   width: 100%;
   height: 100%;
-  font-size: 64px;
+  font-size: 48px;
   text-align: center;
   line-height: 1.7;
 }
@@ -735,6 +816,19 @@ footer {
 @media (max-width: 800px) {
   .browserContainer {
     flex-direction: column;
+  }
+
+  .profileStat {
+    flex-direction: column;
+  }
+
+  .profileStat {
+    padding: 8px;
+    margin-top: 64px;
+  }
+
+  .accountDeco {
+    display: none;
   }
 
   .option {
@@ -758,5 +852,10 @@ footer {
 
   .navContainer {
     margin-top: 56px;
+    margin-right: -8px;
+  }
+
+  .account {
+    margin-top: 64px;
   }
 }
