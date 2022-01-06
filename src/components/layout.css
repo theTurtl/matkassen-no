@@ -625,42 +625,64 @@ b {
 
 footer {
   position: relative;
-  background-color: #0e1a11;
-  height: 256px;
+  background-color: #0e1a1110;
+  height: 128px;
   padding-top: 16px;
   width: 100%;
   margin-bottom: -24px;
 }
 
 .footerNav {
-  padding: 32px;
+  position: absolute;
+  padding: 16px;
   width: 200px;
-  border: solid 1px #fbf7ef;
+  border: solid 1px #0e1a11;
   border-radius: 4px;
-  height: 100px;
-  color: #fbf7ef;
-  margin: 32px;
+  height: 80px;
+  color: #0e1a11;
+  margin-right: 16px;
+  right: 0;
+  opacity: 0.75;
 }
 
 .footerNav h7 {
-  font-size: 24px;
-  color: #fbf7ef;
+  font-size: 20px;
+  color: #0e1a11;
 }
 
 .footerNav p {
-  color: #fbf7ef;
+  color: #0e1a11;
   width: 100%;
   height: 200px;
+  text-decoration-skip: none;
+  text-decoration: none;
+  border: none;
+  margin-top: 8px;
+  font-size: 14px;
 }
 
 .footerSignature {
   position: absolute;
   width: 100%;
   text-align: center;
-  color: #fbf7ef;
+  color: #0e1a11;
   text-decoration: none;
   bottom: 0;
   padding: 32px 0px;
+  opacity: 0.75;
+}
+
+.logoDark {
+  position: absolute;
+  background-image: url("../images/matkassenLogoDark.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 128px;
+  height: 64px;
+  margin: 42px;
+  bottom: 0;
+  opacity: 0.75;
 }
 
 /*------------- Din Side ------------- */

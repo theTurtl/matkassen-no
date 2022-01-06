@@ -57,6 +57,7 @@ const Layout = ({ children }) => {
             {` `}
             <a href="https://www.aspevik.com">aspevikdesign</a>
           </div>
+          <div className="logoDark"></div>
         </footer>
       </div>
     </>
