@@ -40,6 +40,7 @@ const Layout = ({ children }) => {
         <footer
           style={{
             marginTop: `2rem`,
+            marginBottom: `0`,
           }}
         >
           <div className="footerNav">
