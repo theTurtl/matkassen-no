@@ -461,7 +461,7 @@ header {
   }
   100% {
     opacity: 1;
-    box-shadow: 0px 0px 24px 0px #0e1a1175;
+    box-shadow: 0px 0px 24px 0px #0e1a1150;
   }
 }
 
@@ -625,8 +625,8 @@ b {
 footer {
   position: relative;
   background-color: #0e1a11;
-  height: 200px;
-  padding: 32px;
+  height: 256px;
+  padding-top: 16px;
   width: 100%;
   margin-bottom: -24px;
 }
@@ -638,6 +638,7 @@ footer {
   border-radius: 4px;
   height: 100px;
   color: #fbf7ef;
+  margin: 32px;
 }
 
 .footerNav h7 {
@@ -814,6 +815,295 @@ footer {
   line-height: 1.7;
 }
 
+/*-------------------- Matforslag -------------------*/
+
+.foodBanner {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  flex-direction: row;
+  grid-gap: 16px;
+}
+
+.dishBanner {
+  position: relative;
+  width: 100%;
+  background-image: linear-gradient(120deg, #a7c957, #6a994e);
+  height: 100%;
+  flex: 70%;
+  border-radius: 16px;
+}
+
+.dishBannerContainer {
+  width: 200px;
+  margin: 42px;
+}
+
+.dishBannerContainer h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.dishBannerContainer p {
+  font-weight: 100;
+  line-height: 1.3;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.dishBannerContainer button {
+  width: 128px;
+  height: 36px;
+  border: none;
+  border-radius: 18px;
+  background-color: #0e1a11;
+  color: #fbf7ef;
+  font-family: "Vollkorn", serif;
+  font-weight: 100;
+  box-shadow: 0px 0px 12px 0px #0e1a1150;
+}
+
+@keyframes rotater {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.dishBannerContainer button:hover {
+  cursor: pointer;
+  animation: boxFader linear 0.5 forwards;
+}
+
+.dishBannerImg {
+  position: absolute;
+  background-image: url("../images/dishExample2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 300px;
+  height: 300px;
+  bottom: -48px;
+  right: 0;
+  margin-right: 16px;
+  animation: rotater 8s linear infinite;
+}
+
+.staticPart {
+  position: relative;
+  width: 100%;
+  flex: 30%;
+}
+
+.makeList {
+  height: 100px;
+  border: solid 6px #6a994e;
+  border-radius: 16px;
+}
+
+.makeList:hover {
+  cursor: pointer;
+  animation: boxFader linear 0.5s forwards;
+}
+
+.makeList h1 {
+  color: #386641;
+  font-weight: 500;
+  font-size: 26px;
+}
+
+.centerDiv {
+  margin: 26px;
+  width: 180px;
+  margin-top: 26px;
+}
+
+.exploreFood {
+  position: relative;
+  height: 112px;
+  border-radius: 16px;
+  margin-top: 16px;
+  background-image: linear-gradient(135deg, #6a994e, #bc4749);
+}
+
+.exploreFood:hover {
+  cursor: pointer;
+  animation: boxFader linear 0.2s forwards;
+}
+
+.exploreFood:hover > .exploreArrow {
+  animation: rotater linear 0.2s forwards;
+}
+
+.exploreFood p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 32px;
+  font-size: 24px;
+  width: 100px;
+  color: #fbf7ef;
+}
+
+.exploreArrow {
+  background-image: url("../images/arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  margin: 32px;
+}
+
+.categoriesSection {
+  margin-top: 64px;
+}
+
+.categoriesSection h5 {
+  font-size: 28px;
+}
+
+.categoriesView {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-top: 8px;
+}
+
+.category {
+  background-color: #f2e8cf;
+  width: max-content;
+  padding: 12px;
+  border-radius: 8px;
+  border: solid 2px #0e1a11;
+}
+
+.category:hover {
+  cursor: pointer;
+  animation: boxFader linear 0.2s forwards;
+}
+
+.newDishes {
+  margin-top: 64px;
+}
+
+.newDishes h6 {
+  font-size: 28px;
+}
+
+.newDishesView {
+  display: flex;
+  flex-direction: row;
+  margin-top: 32px;
+  margin-bottom: 128px;
+}
+
+.newDish {
+  position: relative;
+  height: 240px;
+  width: 192px;
+  border-radius: 8px;
+  border: solid 2px #0e1a11;
+}
+
+.newDish:hover {
+  cursor: pointer;
+  animation: boxFader linear 0.2s forwards;
+}
+
+.blackBackground {
+  height: 100px;
+  width: 100%;
+  background-color: #0e1a11;
+  border-radius: 6px 6px 0px 0px;
+  clip-path: inset(-1px -1px 0px -1px);
+}
+
+.dishDescription {
+  padding: 16px;
+}
+
+.dishDescription h7 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.dishDescription p {
+  margin-top: 8px;
+  font-weight: 100;
+  width: 120px;
+  line-height: 1.2;
+}
+
+.dishButton {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #0e1a11;
+  right: 0;
+  bottom: 0;
+  margin: 16px;
+  border-radius: 20px;
+}
+
+.newDishAddImg {
+  background-image: url("../images/dishAdd.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 30px;
+  width: 30px;
+  margin: auto;
+  margin-top: 5px;
+  z-index: 2;
+}
+
+.newDishAddImg:hover {
+  cursor: pointer;
+  animation: rotater linear 0.2s forwards;
+}
+
+.dishImg {
+  background-image: url("../images/pizzaMargherita.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 288px;
+  height: 192px;
+  margin-left: -48px;
+}
+
+.profileDeco {
+  position: absolute;
+  background-image: url("../images/profileDecoWaves.svg");
+  background-size: contain;
+  background-position: center;
+  width: 101%;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  top: 0;
+}
+.fader {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  /*background-image: linear-gradient(#0e1a1100, #0e1a1120, #0e1a11);*/
+  top: 0;
+  border-radius: 32px 32px 0px 0px;
+  z-index: 5;
+}
+
 @media (max-width: 800px) {
   .browserContainer {
     flex-direction: column;
@@ -858,5 +1148,16 @@ footer {
 
   .account {
     margin-top: 64px;
+  }
+
+  .foodBanner {
+    flex-direction: column;
+    margin-bottom: 300px;
+  }
+
+  .dishBannerImg {
+    width: 224px;
+    height: 224px;
+    margin-right: 0px;
   }
 }

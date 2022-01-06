@@ -19,10 +19,12 @@ const Header = ({ siteTitle }) => (
 
       <div class="navContainer">
         <div class="menuIcon"></div>
+        <Link to="/Profil">
         <div class="profileContainer">
-          <p>{siteTitle}</p>
+          <p>Nicole M. Aspevik</p>
           <div class="profileIcon"></div>
         </div>
+        </Link>
       </div>
       
     </div>
