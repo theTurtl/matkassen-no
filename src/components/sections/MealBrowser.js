@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 
 function MealBrowser() {
     return (
@@ -32,16 +33,18 @@ function MealBrowser() {
                         <div className="mealCard">
                             <h5>Enchiladas</h5>
                             <div className="mealElements">
-                                <div className="mealDescription">
-                                    <p>Kjøttdeig</p>
-                                    <p>Mais</p>
-                                    <p>Ost</p>
-                                    <p>Paprika</p>
-                                    <div className="mealPrice">
-                                        <p>128 kr</p>
-                                        <div className="priceDecoration"></div>
+                                <Link to="/Matrett">
+                                    <div className="mealDescription">
+                                        <p>Kjøttdeig</p>
+                                        <p>Mais</p>
+                                        <p>Ost</p>
+                                        <p>Paprika</p>
+                                        <div className="mealPrice">
+                                            <p>128 kr</p>
+                                            <div className="priceDecoration"></div>
+                                        </div>
                                     </div>
-                                </div>
+                                </Link>
                             </div>
                             <div className="addButton">
                                 <div className="plussImg"></div>

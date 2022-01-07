@@ -135,6 +135,13 @@ body {
   background-color: #fbf7ef;
 }
 
+main {
+  animation-name: faderOpacity;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+}
+
 header {
   padding-top: 32px;
   background-color: #fbf7ef;
@@ -627,6 +634,15 @@ header {
   }
 }
 
+@keyframes faderOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .addButton:hover {
   cursor: pointer;
   animation-name: fader;
@@ -655,7 +671,6 @@ footer {
   color: #0e1a11;
   margin-right: 16px;
   right: 0;
-  opacity: 0.75;
 }
 
 .footerNav h7 {
@@ -667,9 +682,6 @@ footer {
   color: #0e1a11;
   width: 100%;
   height: 200px;
-  text-decoration-skip: none;
-  text-decoration: none;
-  border: none;
   margin-top: 8px;
   font-size: 14px;
 }
@@ -687,11 +699,11 @@ footer {
 
 .logoDark {
   position: absolute;
-  background-image: url("../images/matkassenLogoDark.svg");
+  background-image: url("../images/b&w.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 128px;
+  width: 64px;
   height: 64px;
   margin: 42px;
   bottom: 0;
@@ -750,6 +762,7 @@ footer {
   display: flex;
   flex-direction: row;
   padding: 64px;
+  margin-bottom: 128px;
 }
 
 .yourSide {
@@ -1142,6 +1155,157 @@ footer {
   z-index: 5;
 }
 
+/*------------------- Matrett ------------------*/
+
+.mealBanner {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 160px;
+  gap: 8px;
+}
+
+.mealNameSection {
+  position: relative;
+  flex: 76%;
+  background-color: #0e1a11;
+  border-radius: 32px;
+  height: 100%;
+}
+
+.mealNameSection h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 32px;
+  color: #fbf7ef;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.mealNameSection button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 32px;
+  width: 80px;
+  height: 32px;
+  border: none;
+  border-radius: 16px;
+  font-family: "Vollkorn", serif;
+}
+
+.mealPriceSection {
+  flex: 24%;
+  border: solid 1px #0e1a11;
+  border-radius: 32px;
+}
+
+.mealPriceSection p {
+  font-size: 20px;
+}
+
+.mealPriceSection h7 {
+  font-size: 42px;
+}
+
+.mealPriceContainer {
+  position: relative;
+  margin: 32px;
+}
+
+.mealDescriptionContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 64px;
+  gap: 48px;
+}
+
+.ingridients {
+  position: relative;
+  flex: 70%;
+}
+
+.ingridients h2 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.ingridientsContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  gap: 8px;
+}
+
+.ingridient {
+  background-color: #0e1a11;
+  color: #fbf7ef;
+  width: max-content;
+  padding: 16px;
+}
+
+.addIngridient {
+  padding: 16px;
+  border: solid 1px #0e1a11;
+  width: 80px;
+  text-align: center;
+}
+
+.plussAddIngridient {
+  background-image: url("../images/pluss.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+  width: 100%;
+}
+
+.wavesMeal {
+  position: absolute;
+  right: 0;
+  background-image: url("../images/wave.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100%;
+  width: 32px;
+  top: 0;
+}
+
+.mealStatSection {
+  flex: 30%;
+}
+
+.mealStatSection h3 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.mealCategory {
+  border: solid 1px #0e1a11;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  border-radius: 32px;
+  margin-top: 16px;
+}
+
+.mealStatSection h4 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-top: 48px;
+}
+
+.mealSize {
+  font-size: 64px;
+  font-weight: 900;
+  width: 50%;
+  text-align: center;
+  margin-top: 16px;
+}
+
 @media (max-width: 1020px) {
   .foodBanner {
     flex-direction: column;
@@ -1150,6 +1314,10 @@ footer {
 }
 
 @media (max-width: 800px) {
+  .mealBanner {
+    flex-direction: column;
+  }
+
   .browserContainer {
     flex-direction: column;
   }

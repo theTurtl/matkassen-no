@@ -47,16 +47,16 @@ const Layout = ({ children }) => {
             <h7>Sidekart.</h7>
             <br/>
             <p>
-              <Link to="/Matforslag">Utforsk Meny</Link> <br />
-              <Link to="/Profil/">Din Profil</Link> <br />
-              <Link to="/using-ssr">Dine Retter</Link> <br />
-              <Link to="/using-dsg">Logg Ut</Link>
+              <Link to="/Matforslag" style={{ color: '#0e1a11', textDecoration: 'none' }}>Utforsk Meny</Link> <br />
+              <Link to="/Profil/" style={{ color: '#0e1a11', textDecoration: 'none' }}>Din Profil</Link> <br />
+              <Link to="/using-ssr" style={{ color: '#0e1a11', textDecoration: 'none' }}>Dine Retter</Link> <br />
+              <Link to="/using-dsg" style={{ color: '#0e1a11', textDecoration: 'none' }}>Logg Ut</Link>
             </p>
           </div>
           <div className="footerSignature">
             © {new Date().getFullYear()}
             {` `}
-            <a href="https://www.aspevik.com">aspevikdesign</a>
+            <a href="https://www.aspevik.com" style={{ color: '#0e1a11', textDecoration: 'none' }}>aspevikdesign</a>
           </div>
           <div className="logoDark"></div>
         </footer>
