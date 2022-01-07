@@ -1248,8 +1248,9 @@ footer {
 .addIngridient {
   padding: 16px;
   border: solid 1px #0e1a11;
-  width: 80px;
+  width: 128px;
   text-align: center;
+  background-color: #fbf7ef;
 }
 
 .plussAddIngridient {

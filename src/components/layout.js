@@ -9,6 +9,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
+import { useState } from "react"
 
 import Header from "./header"
 import "./layout.css"
@@ -23,6 +24,33 @@ const Layout = ({ children }) => {
       }
     }
   `)
+
+  const [meals, setMeals] = useState([
+    {
+      id: 0,
+      name: 'Enchiladas',
+  },
+    {
+      id: 1,
+      name: 'Pizza Margherita',
+    },
+  ])
+
+  const [ingridients, setIngridients] = useState([
+    {
+      meal: 'Enchiladas',
+      name: 'Kjøttdeig',
+      price: 49,
+    },
+    {
+      meal: 'Enchiladas',
+      name: 'Ost',
+      price: 49,
+    }
+  ])
+
+
+
 
   return (
     <>
