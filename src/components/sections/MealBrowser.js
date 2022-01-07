@@ -33,7 +33,7 @@ function MealBrowser() {
                         <div className="mealCard">
                             <h5>Enchiladas</h5>
                             <div className="mealElements">
-                                <Link to="/Matrett">
+                                <Link to="/Matrett" style={{ color: '#fbf7ef', textDecoration: 'none' }}>
                                     <div className="mealDescription">
                                         <p>Kjøttdeig</p>
                                         <p>Mais</p>
