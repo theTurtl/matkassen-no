@@ -6,12 +6,6 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 
-
-
-
-
-
-
 const Matrett = () => (
   <Layout>
     <Seo title="Matrett" />

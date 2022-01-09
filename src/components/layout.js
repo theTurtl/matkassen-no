@@ -27,14 +27,15 @@ const Layout = ({ children }) => {
 
   const [meals, setMeals] = useState([
     {
-      id: 0,
+      id: 1,
       name: 'Enchiladas',
   },
     {
-      id: 1,
+      id: 2,
       name: 'Pizza Margherita',
     },
   ])
+
 
   const [ingridients, setIngridients] = useState([
     {
@@ -46,6 +47,16 @@ const Layout = ({ children }) => {
       meal: 'Enchiladas',
       name: 'Ost',
       price: 49,
+    },
+    {
+      meal: 'Pizza Margherita',
+      name: 'Ost',
+      price: 49,
+    },
+    {
+      meal: 'Pizza Margherita',
+      name: 'Skinke',
+      price: 39,
     }
   ])
 

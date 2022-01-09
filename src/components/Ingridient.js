@@ -1,9 +1,9 @@
 import React from "react";
 
-function Ingridient({name}) {
+function Ingridient({id, name}) {
     return (
         <div className="ingridient">
-            <p>{name}</p>
+            <p key={id}>{name}</p>
         </div>
     )
 }
